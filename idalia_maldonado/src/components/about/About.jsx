@@ -25,8 +25,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <AboutBox />
     </section>
   );
 };

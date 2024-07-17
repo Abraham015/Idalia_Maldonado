@@ -1,0 +1,110 @@
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact__content {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact__card-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.contact__card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact__button {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact__button-icon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.contact__form-div {
+    margin-bottom: 1rem;
+}
+
+.contact__form-tag {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact__form-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.contact__form-area textarea {
+    resize: none;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.button__icon {
+    margin-left: 0.5rem;
+    fill: #fff;
+}
+
+@media (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+    }
+}
