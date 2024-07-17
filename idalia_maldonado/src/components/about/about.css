@@ -107,7 +107,8 @@
 }
 
 .about__title{
-    font-size: 1.875rem;
+    font-size: 1rem;
+    text-align: justify;
 }
 
 @media screen and (max-width: 1024px){

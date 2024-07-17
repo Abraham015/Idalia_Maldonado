@@ -1,29 +1,29 @@
-import Work1 from "../../assets/Logo.ico";
-import Work2 from "../../assets/Work2.avif";
-import Work3 from "../../assets/work-1.svg";
+import Work1 from "../../assets/Pon1.png";
+import Work2 from "../../assets/Pon2.png";
+import Pub from "../../assets/Pub.png";
 
 const Menu=[
     {
         id: 1,
         image: Work1,
-        title: "EscoMate",
-        category: "FrontEnd",
-        link: "https://escomate.netlify.app/"
+        title: "Artificial Intelligence applied to Tourism",
+        category: "Entrevista",
+        link: "https://www.linkedin.com/posts/idaliamaldonado_conference-strategic-innovative-activity-7110034685296013312-6sk4/?utm_source=share&utm_medium=member_android"
     },
     {
         id: 2,
         image: Work2,
-        title: "Chino",
-        category: "FullStack",
-        link: "https://cz-chino.web.app/"
+        title: "Sin Prejuicios",
+        category: "Entrevista",
+        link: "https://www.linkedin.com/posts/idaliamaldonado_algoritmos-sinprejuicios-paolarojas-activity-7123829378265821184-LeO9/?utm_source=share&utm_medium=member_android"
     },
     {
         id: 3,
-        image: Work3,
-        title: "Expense Tracker",
-        category: "FrontEnd",
-        link: "https://exp-track-react.netlify.app/"
-    }
-]
+        image: Pub,
+        title: "Classification of Bovine Reproductive Cycle Phase using Ultrasound-Detected Features",
+        category: "Publicaciones",
+        link: "https://ieeexplore.ieee.org/document/4228547"
+    },
+];
 
 export default Menu

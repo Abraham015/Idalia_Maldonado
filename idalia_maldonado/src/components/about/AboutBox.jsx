@@ -6,15 +6,13 @@ const AboutBox = () => {
         <div className="about__box">
             <i className="about__icon icon-fire"></i>
             <div>
-                <h3 className="about__title">English</h3>
-                <span className="about__subtitle">Advanced (C1 Level)</span>
+                <h3 className="about__title">Participacion en Consejo Coordinador de Mujeres Empresarias CCME</h3>
             </div>
         </div>
         <div className="about__box">
             <i className="about__icon icon-fire"></i>
             <div>
-                <h3 className="about__title">French</h3>
-                <span className="about__subtitle">Intermediate (B1 Level)</span>
+                <h3 className="about__title">Miembro de STEM</h3>
             </div>
         </div>
         <div className="about__box">

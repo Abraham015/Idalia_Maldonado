@@ -19,8 +19,8 @@ const Portfolio = () => {
       <Carousel/>
       <div className="work__filters">
         <span className="work__item" onClick={()=>setItems(Menu)}>Todo</span>
-        <span className="work__item" onClick={()=>filterItem("FullStack")}>Entrevistas</span>
-        <span className="work__item" onClick={()=>filterItem("FrontEnd")}>Publicaciones</span>
+        <span className="work__item" onClick={()=>filterItem("Entrevista")}>Entrevistas</span>
+        <span className="work__item" onClick={()=>filterItem("Publicaciones")}>Publicaciones</span>
       </div>
       <div className="work__container grid">
         {items.map((elem)=>{
