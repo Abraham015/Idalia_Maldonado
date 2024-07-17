@@ -46,3 +46,9 @@
     font-size: var(--h3-font-size);
     margin: 0.5rem 0;
 }
+
+@media screen and (max-width: 1024px){
+    .timeline{
+        width: 95%;
+    }
+}

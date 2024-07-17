@@ -23,16 +23,9 @@
     margin-bottom: 0.5rem;
 }
 
-.home__socials{
-    display: flex;
-    column-gap: 1.75rem;
-    margin: 1.5rem 0;
-    align-items: center;
-}
-
 .home__social-link{
     color: var(--title-color);
-    font-size: 1.3rem;
+    font-size: 2rem;
     transition: .3s;
 }
 
@@ -94,8 +87,12 @@
 }
 
 @media screen and (max-width: 1024px){
+    .home{
+        min-height: 95vh;
+    }
+
     .home__social-link{
-        font-size: 1.125rem;
+        font-size: 2rem;
     }
 
     .home__img{

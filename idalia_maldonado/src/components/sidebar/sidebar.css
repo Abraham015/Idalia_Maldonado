@@ -49,14 +49,16 @@
 @media screen and (max-width: 1024px) {
     .aside {
         left: -110px;
+        min-height: 95vh;
     }
 
     .nav__toggle {
+        position: fixed;
         display: flex;
     }
 
     .nav__toggle-open{
-        left: 140px;
+        left: 140px;    
     }
 
     .show-menu{

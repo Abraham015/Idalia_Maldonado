@@ -101,7 +101,7 @@ img{
 }
 
 .section{
-    padding-top: 7rem;
+    padding-top: 8rem;
     padding-bottom: 2rem;
 }
 
@@ -147,4 +147,10 @@ img{
 
 .btn:hover{
     animation: button-push 0.3s linear 1;
+}
+
+@media screen and (max-width: 768px){
+    .section{
+        padding-top: 3.5rem;
+    }
 }
