@@ -1,7 +1,6 @@
 import React,{ useState }  from 'react';
 import './portfolio.css';
 import Menu from './Menu';
-import Carousel from './Carousel';
 
 const Portfolio = () => {
   const [items, setItems]=useState(Menu);
@@ -13,10 +12,7 @@ const Portfolio = () => {
     setItems(updatedItems);
   }
   return (
-    <section className="work container section" id='portfolio'>
-      <h2 className="section__title">Trabajos</h2>
-      
-      <Carousel/>
+    <section className="work">
       <div className="work__filters">
         <span className="work__item" onClick={()=>setItems(Menu)}>Todo</span>
         <span className="work__item" onClick={()=>filterItem("Entrevista")}>Entrevistas</span>

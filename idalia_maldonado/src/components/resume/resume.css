@@ -1,5 +1,5 @@
 .timeline{
-    background-color: var(--container-color);
+    background-color: rgba(246, 248, 251, 0.7);
     padding: 1.875rem;
     border-radius: var(--border-radius);
     position: relative;
@@ -20,7 +20,7 @@
     content: '';
     width: 1px;
     height: 100%;
-    background-color: var(--first-color);
+    background-color: rgba(224, 71, 158, 1);
     position: absolute;
     left: 0.25rem;
     top: 0;

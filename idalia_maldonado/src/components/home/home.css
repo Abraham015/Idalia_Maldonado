@@ -103,11 +103,9 @@
 
 @media (max-width: 768px) {
     .content {
-
         margin-top: 5rem;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
     }
 
     .profile-card {

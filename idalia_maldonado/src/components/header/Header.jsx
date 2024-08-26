@@ -51,14 +51,14 @@ function Header() {
         &#9776; {/* Icono de sándwich */}
       </div>
       <nav className={`navbar ${isOpen ? "show" : ""}`}>
-        <div className="logo">LOGO</div>
+        <div className="logo"></div>
         <a href="#home" className="nav-item">
           <i className="icon-home nav-icon"></i> Acerca de mí
         </a>
         <a href="#resume" className="nav-item">
           <i className="icon-graduation nav-icon"></i> Experiencia
         </a>
-        <a href="#portfolio" className="nav-item">
+        <a href="#work" className="nav-item">
           <i className="icon-layers nav-icon"></i> Trabajo
         </a>
         <a href="#contact" className="nav-item">

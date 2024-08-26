@@ -7,6 +7,16 @@ import "./portfolio.css";
 import Car1 from "../../assets/car1.jpeg";
 import Car2 from "../../assets/car2.jpeg";
 import Car3 from "../../assets/car3.jpeg";
+import Car4 from "../../assets/Car4.jpeg";
+import Car5 from "../../assets/Car5.jpeg";
+import Car6 from "../../assets/Car6.jpeg";
+import Car7 from "../../assets/Car7.jpeg";
+import Car8 from "../../assets/Car8.jpeg";
+import Car9 from "../../assets/Car9.jpeg";
+import Car10 from "../../assets/Car10.jpeg";
+import Car11 from "../../assets/Car11.jpeg";
+import Car12 from "../../assets/Car12.jpeg";
+import Car13 from "../../assets/Car13.jpeg";
 
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -99,6 +109,16 @@ const Carousel = () => {
     Car1,
     Car2,
     Car3,
+    Car4,
+    Car5,
+    Car6,
+    Car7,
+    Car8,
+    Car9,
+    Car10,
+    Car11,
+    Car12,
+    Car13,
   ];
 
   return (
