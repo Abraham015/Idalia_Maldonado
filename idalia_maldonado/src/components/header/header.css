@@ -1,0 +1,120 @@
+/* Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease;
+    background-color: rgba(5, 74, 145, 1);
+}
+
+.header.hidden {
+    top: -100px;
+    /* Oculta el header al desplazar hacia abajo */
+}
+
+.header.visible {
+    top: 0;
+    /* Muestra el header al desplazarse hacia arriba */
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1100;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(5, 74, 145, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.navbar.show {
+    transform: translateX(0);
+}
+
+.logo {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav-icon {
+    display: none;
+    margin-right: 8px;
+}
+
+.nav-item:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #dd2985;
+    border-radius: 5px;
+}
+
+.nav-item:hover .nav-icon {
+    display: inline;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        position: static;
+        transform: translateX(0);
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 0 20px;
+        background-color: transparent;
+    }
+
+    .nav-item {
+        margin: 0 15px;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        width: 200px;
+        /* Ajuste del tamaño del menú en dispositivos más pequeños */
+    }
+}

@@ -18,7 +18,7 @@
     /*======Font Weight============*/
     --font-medium: 500;
     --font-semibold: 600;
-    --font-bold:700;
+    --font-bold: 700;
     /*=======Box Shadow============*/
     --shadow: 0px 5px 20px 0px rgb(69 67 96 / 100%);
     /*========Border Radius==========*/
@@ -26,7 +26,7 @@
 }
 
 /*========Responsive Typography======================*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     :root {
         --h1-font-size: 1.75rem;
         --h2-font-size: 1.25rem;
@@ -38,82 +38,83 @@
 }
 
 /*==============CSS Variables==================*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body,
 button,
 input,
-textarea{
+textarea {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
 
-body{
-    background-color: var(--body-font);
+body {
+    background-image: url("./assets/PATRON3.png");
     line-height: 1.7;
     color: var(--text-color);
+    background-size: cover;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     color: var(--title-color);
     font-weight: var(--font-semibold);
     line-height: 1.2;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-button{
+button {
     cursor: pointer;
     border: none;
     outline: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
 
 /*====================Reusable CSS====================*/
-.container{
+.container {
     max-width: 1080px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
 }
 
-.grid{
+.grid {
     display: grid;
 }
 
-.section{
-    padding-top: 7rem;
+.section {
+    padding-top: 4rem;
     padding-bottom: 2rem;
 }
 
-.section__title{
+.section__title {
     font-size: var(--h1-font-size);
     margin-left: 0.875rem;
-    font-weight:  var(--font-bold);
+    font-weight: var(--font-bold);
     position: relative;
     margin-bottom: 3.75rem;
 }
 
-.section__title::before{
+.section__title::before {
     content: '';
     background: url('./assets/dots-bg.svg');
     height: 2.25rem;
@@ -123,7 +124,7 @@ img{
     top: -0.875rem;
 }
 
-.btn{
+.btn {
     padding: 0.75rem 2rem;
     line-height: 1;
     border-radius: 1.875rem;
@@ -136,21 +137,23 @@ img{
 }
 
 @keyframes button-push {
-    50%{
+    50% {
         transform: scale(0.8);
     }
 
-    100%{
+    100% {
         transform: scale(1);
     }
 }
 
-.btn:hover{
+.btn:hover {
     animation: button-push 0.3s linear 1;
 }
 
-@media screen and (max-width: 768px){
-    .section{
+@media screen and (max-width: 768px) {
+    .section {
         padding-top: 3.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
