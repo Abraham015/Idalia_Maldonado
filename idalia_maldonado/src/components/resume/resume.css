@@ -1,5 +1,5 @@
 .timeline{
-    background-color: var(--container-color);
+    background-color: rgba(246, 248, 251, 0.7);
     padding: 1.875rem;
     border-radius: var(--border-radius);
     position: relative;
@@ -20,7 +20,7 @@
     content: '';
     width: 1px;
     height: 100%;
-    background-color: var(--first-color);
+    background-color: rgba(224, 71, 158, 1);
     position: absolute;
     left: 0.25rem;
     top: 0;
@@ -32,7 +32,8 @@
     left: -0.4375rem;
     top: 0;
     font-size: var(--h2-font-size);
-    color: var(--first-color);
+    color: rgba(224, 71, 158, 1)
+    ;
     background-color: var(--container-color);
     padding: 0.4375rem 0;
 }
@@ -49,6 +50,6 @@
 
 @media screen and (max-width: 1024px){
     .timeline{
-        width: 95%;
+        width:100%;
     }
 }

@@ -20,26 +20,11 @@ const Contact = () => {
 
   return (
     <section className="contact container section" id="contact">
+      <div className="contact__container">
+        <div className="contact__content">
+          
+        
       <h2 className="section__title">Contacto</h2>
-      <div className="contact__container grid">
-        <div className="contact__content">
-          <h3 className="contact__title">Hablame</h3>
-          <div className="contact__info">
-            <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
-              <h3 className="contact__card-title">Correo</h3>
-              <span className="contact__card-data"></span>
-              <a
-                href="mailto:abraham.hdez.aha@gmail.com"
-                className="contact__button"
-              >
-                test@gmail.com
-              </a>
-              <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-            </div>
-          </div>
-        </div>
-        <div className="contact__content">
           <h3 className="contact__title">Escribe acerca de tu proyecto</h3>
           <form ref={form} /*onSubmit={sendEmail}*/ className="contact__form">
             <div className="contact__form-div">
