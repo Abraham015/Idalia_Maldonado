@@ -6,9 +6,9 @@ const HeaderSocials = () => {
       <a
         href="https://www.linkedin.com/in/idaliamaldonado/"
         className="home__social-link"
-        target="_blank"
+        
       >
-        <i class="uil uil-linkedin"></i>
+        <i className="uil uil-linkedin"></i>
       </a>
     </div>
   );

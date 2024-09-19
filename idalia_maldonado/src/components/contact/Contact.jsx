@@ -1,36 +1,48 @@
-// Contact.js
 import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 import './contact.css';
 
 const Contact = () => {
   const form = useRef();
 
-  /*const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text);
-        alert("Message sent successfully!");
-      }, (error) => {
-        console.log(error.text);
-        alert("An error occurred, please try again.");
-      });
-  };*/
+    emailjs
+      .sendForm('service_9o8u646', 'template_mc56hrp', form.current,'ljPlaTbUiYwwIRTvC')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          Swal.fire({
+            icon: "success",
+            title: "Success",
+            text: "Correo enviado correctamente",
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Error al enviar el correo",
+          });
+        },
+      );
+    
+    // Reiniciar formulario después de enviar
+    e.target.reset();
+  };
 
   return (
     <section className="contact container section" id="contact">
       <div className="contact__container">
         <div className="contact__content">
-          
-        
-      <h2 className="section__title">Contacto</h2>
+          <h2 className="section__title">Contacto</h2>
           <h3 className="contact__title">Escribe acerca de tu proyecto</h3>
-          <form ref={form} /*onSubmit={sendEmail}*/ className="contact__form">
+          <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label htmlFor="name" className="contact__form-tag">
-                Nombre:
-              </label>
+              <label htmlFor="name" className="contact__form-tag">Nombre:</label>
               <input
                 type="text"
                 name="name"
@@ -40,9 +52,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact__form-div">
-              <label htmlFor="email" className="contact__form-tag">
-                Correo:
-              </label>
+              <label htmlFor="email" className="contact__form-tag">Correo:</label>
               <input
                 type="email"
                 name="email"
@@ -52,9 +62,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label htmlFor="project" className="contact__form-tag">
-                Proyecto:
-              </label>
+              <label htmlFor="project" className="contact__form-tag">Proyecto:</label>
               <textarea
                 name="project"
                 id="project"

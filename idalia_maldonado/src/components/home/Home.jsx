@@ -1,6 +1,5 @@
 import React from 'react';
 import './home.css';
-import Header from '../header/Header';
 import ProfileCard from './ProfileCard';
 import AboutMe from './AboutMe';
 
