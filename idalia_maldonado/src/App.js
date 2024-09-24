@@ -4,6 +4,7 @@ import Resume from './components/resume/Resume';
 import Work from './components/portfolio/Work';
 import Contact from './components/contact/Contact';
 import Header from './components/header/Header';
+import Carousel from './components/portfolio/Carousel';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <Header/>
       <main className='main'>
         <Home/>
-        <Resume/>
+        <Carousel/>
         <Work/>
+        <Resume/>
         <Contact/>
       </main>
     </>

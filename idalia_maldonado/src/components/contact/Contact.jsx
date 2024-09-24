@@ -62,14 +62,14 @@ const Contact = () => {
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label htmlFor="project" className="contact__form-tag">Proyecto:</label>
+              <label htmlFor="project" className="contact__form-tag">¿Deseas que hablemos?:</label>
               <textarea
                 name="project"
                 id="project"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Ingresa tu proyecto"
+                placeholder="Ingresa la temática que deseas abordar"
                 required
               ></textarea>
             </div>

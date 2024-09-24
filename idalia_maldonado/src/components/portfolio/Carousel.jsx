@@ -17,6 +17,7 @@ import Car10 from "../../assets/Car10.jpeg";
 import Car11 from "../../assets/Car11.jpeg";
 import Car12 from "../../assets/Car12.jpeg";
 import Car13 from "../../assets/Car13.jpeg";
+import './carousel.css';
 
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -38,7 +39,9 @@ const NextArrow = (props) => {
         zIndex: 2,
       }}
       onClick={onClick}
-    ></div>
+    >
+      <span style={{ color: "#fff", fontSize: "20px" }}>{">"}</span>
+    </div>
   );
 };
 
@@ -62,7 +65,9 @@ const PrevArrow = (props) => {
         zIndex: 2,
       }}
       onClick={onClick}
-    ></div>
+    >
+      <span style={{ color: "#fff", fontSize: "20px" }}>{"<"}</span>
+    </div>
   );
 };
 
@@ -122,15 +127,21 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="carousel-container">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <img className="img__carousel" src={image} alt={`Slide ${index + 1}`} />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <section className="carousel">
+      <div className="carousel-container">
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index}>
+              <img
+                className="img__carousel"
+                src={image}
+                alt={`Slide ${index + 1}`}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 };
 

@@ -3,7 +3,8 @@
   import Menu from './Menu';
 
   const Portfolio = () => {
-    const [items, setItems]=useState(Menu);
+    const [items, setItems]=useState(Menu.filter((curElem) => curElem.category === "Entrevista"));
+
     const filterItem=(categoryItem)=>{
       const updatedItems=Menu.filter((curElem)=>{
         return curElem.category===categoryItem;
@@ -14,7 +15,6 @@
     return (
       <section className="work">
         <div className="work__filters">
-          <span className="work__item" onClick={()=>setItems(Menu)}>Todo</span>
           <span className="work__item" onClick={()=>filterItem("Entrevista")}>Entrevistas</span>
           <span className="work__item" onClick={()=>filterItem("Publicaciones")}>Publicaciones</span>
         </div>

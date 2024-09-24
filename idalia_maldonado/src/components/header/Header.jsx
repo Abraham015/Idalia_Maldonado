@@ -59,7 +59,7 @@ function Header() {
           <i className="icon-graduation nav-icon"></i> Experiencia
         </a>
         <a href="#work" className="nav-item">
-          <i className="icon-layers nav-icon"></i> Trabajo
+          <i className="icon-layers nav-icon"></i> Entrevistas
         </a>
         <a href="#contact" className="nav-item">
           <svg
