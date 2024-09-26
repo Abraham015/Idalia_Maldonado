@@ -15,33 +15,39 @@
 }
 
 .work__container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.875rem;
-    max-height: 325px; 
+    max-height: 325px;
     overflow-y: auto;
     padding-right: 10px;
 }
 
 /* Estilo para el scrollbar */
 .work__container::-webkit-scrollbar {
-    width: 8px; /* Ancho del scrollbar */
+    width: 8px;
+    /* Ancho del scrollbar */
 }
 
 /* Estilo del fondo de la barra */
 .work__container::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color de fondo de la barra */
-    border-radius: 10px; /* Redondeo de las esquinas del track */
+    background: #f1f1f1;
+    /* Color de fondo de la barra */
+    border-radius: 10px;
+    /* Redondeo de las esquinas del track */
 }
 
 /* Estilo de la parte deslizante (thumb) */
 .work__container::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color de la barra deslizante */
-    border-radius: 10px; /* Redondeo de las esquinas */
+    background-color: #888;
+    /* Color de la barra deslizante */
+    border-radius: 10px;
+    /* Redondeo de las esquinas */
 }
 
 /* Estilo cuando se interactúa con la barra */
 .work__container::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Color de la barra al pasar el mouse */
+    background-color: #555;
+    /* Color de la barra al pasar el mouse */
 }
 
 .work__card {
@@ -122,6 +128,36 @@
     transform: translateY(0);
 }
 
+.work__list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.work__list-item {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.work__list-item:last-child {
+    border-bottom: none;
+}
+
+.text-link {
+    display: inline-block;
+    /* Asegura que el enlace se comporte como un bloque en línea */
+    width: 100%;
+    /* Ajusta el ancho al contenedor */
+    text-overflow: ellipsis;
+    /* Muestra puntos suspensivos si el texto es demasiado largo */
+    overflow: hidden;
+    /* Oculta el texto sobrante */
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+}
+
+
 @media screen and (max-width: 1024px) {
     .work__filters {
         justify-content: center;
@@ -141,6 +177,10 @@
 
     .work__filters {
         row-gap: 0.25rem;
+    }
+
+    .text-link {
+        white-space: normal;
     }
 }
 

@@ -69,7 +69,7 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Ingresa la temática que deseas abordar"
+                placeholder="Ingresa la temática que quieras abordar"
                 required
               ></textarea>
             </div>
