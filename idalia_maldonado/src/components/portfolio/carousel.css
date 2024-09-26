@@ -40,6 +40,8 @@
 @media screen and (max-width: 768px) {
     .carousel{
         margin-top: 10rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 
     .carousel-container {
