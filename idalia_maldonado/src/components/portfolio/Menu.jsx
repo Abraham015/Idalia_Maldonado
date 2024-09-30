@@ -3,6 +3,7 @@ import Ent2 from "../../assets/Entrevista2.png";
 import Ent3 from "../../assets/Entrevista3.png";
 import Ent4 from "../../assets/Entrevista4.png";
 import Ent5 from "../../assets/Entrevista5.png";
+import Ent6 from "../../assets/Entrevista6.png";
 
 const Menu=[
     {
@@ -63,6 +64,19 @@ const Menu=[
         title: "Web Application Prototype for Tourist Travel in the State of Querétaro, México",
         category: "Publicaciones",
         link: "https://link.springer.com/chapter/10.1007/978-3-031-51038-0_91"
+    },
+    {
+        id: 10,
+        title: "Centralization of Information to Understand the Consumer Within the Restaurant Sector",
+        category: "Publicaciones",
+        link: "https://link.springer.com/chapter/10.1007/978-3-031-51038-0_90"
+    },
+    {
+        id: 11,
+        title: "Congreso CORE 2024",
+        image: Ent6,
+        category: "Entrevista",
+        link: "https://www.youtube.com/watch?v=pscfskISm2A&t=8640s"
     }
 ];
 
